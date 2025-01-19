@@ -1,50 +1,53 @@
-Web Page to JSON & PDF
-Web Page to JSON & PDF is a versatile tool designed to extract content from web pages and save it in two formats: JSON and PDF. It is ideal for scraping text, paragraphs, and other content from websites, making it easy to process and store the extracted data.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page to JSON & PDF</title>
+</head>
+<body>
+  <h1>Web Page to JSON & PDF</h1>
 
-Features
-🧑‍💻 Extract content from any webpage.
-📄 Export data to PDF for easy viewing and sharing.
-📊 Save extracted text as JSON for structured data storage.
-⚡ Easily customizable for various websites and content types.
-🚀 Uses Puppeteer for headless browsing, ensuring smooth automation without a browser UI.
-Installation
-Follow these steps to get started:
+  <p><strong>Web Page to JSON & PDF</strong> is a versatile tool designed to extract content from web pages and save it in two formats: JSON and PDF. It is ideal for scraping text, paragraphs, and other content from websites, making it easy to process and store the extracted data.</p>
 
-1. Clone the Repository
-bash
-Kopyala
-git clone https://github.com/muhammederencennetkusu/web-page-to-json-pdf.git
-2. Navigate to the Project Directory
-bash
-Kopyala
-cd web-page-to-json-pdf
-3. Install Dependencies
-Run the following command to install necessary dependencies:
+  <h2>Features</h2>
+  <ul>
+    <li>🧑‍💻 Extract content from any webpage.</li>
+    <li>📄 Export data to <strong>PDF</strong> for easy viewing and sharing.</li>
+    <li>📊 Save extracted text as <strong>JSON</strong> for structured data storage.</li>
+    <li>⚡ Easily customizable for various websites and content types.</li>
+    <li>🚀 Uses <strong>Puppeteer</strong> for headless browsing, ensuring smooth automation without a browser UI.</li>
+  </ul>
 
-bash
-Kopyala
-npm install
-4. (Optional) Install pdf-lib for PDF support
-If you plan to work with PDFs, install the pdf-lib library:
+  <h2>Installation</h2>
+  <p>Follow these steps to get started:</p>
 
-bash
-Kopyala
-npm install pdf-lib
-Usage
-Convert Web Pages to JSON
-To extract content from a website and save it as a JSON file, follow these steps:
+  <h3>1. Clone the Repository</h3>
+  <pre><code>git clone https://github.com/muhammederencennetkusu/web-page-to-json-pdf.git</code></pre>
 
-Modify the startPage, stopPage, and url variables in the script to match the website and page range you want to scrape.
+  <h3>2. Navigate to the Project Directory</h3>
+  <pre><code>cd web-page-to-json-pdf</code></pre>
 
-Run the script using Node.js:
+  <h3>3. Install Dependencies</h3>
+  <pre><code>npm install</code></pre>
 
-bash
-Kopyala
-node index.js
-The extracted content will be saved in a file called output.json.
-Example JSON Output:
-json
-Kopyala
+  <h3>4. (Optional) Install <strong>pdf-lib</strong> for PDF support</h3>
+  <pre><code>npm install pdf-lib</code></pre>
+
+  <h2>Usage</h2>
+  <h3>Convert Web Pages to JSON</h3>
+  <p>To extract content from a website and save it as a JSON file, follow these steps:</p>
+
+  <ol>
+    <li>Modify the <code>startPage</code>, <code>stopPage</code>, and <code>url</code> variables in the script to match the website and page range you want to scrape.</li>
+    <li>Run the script using Node.js:
+      <pre><code>node index.js</code></pre>
+    </li>
+    <li>The extracted content will be saved in a file called <code>output.json</code>.</li>
+  </ol>
+
+  <h4>Example JSON Output:</h4>
+  <pre><code>
 [
   {
     "page": 1,
@@ -55,35 +58,42 @@ Kopyala
     "content": "This is the content from the second page..."
   }
 ]
-Convert Web Pages to PDF
-To extract and save the content of web pages as a PDF:
+  </code></pre>
 
-Set the startPage, stopPage, and url variables in the script to the desired range of pages.
+  <h3>Convert Web Pages to PDF</h3>
+  <p>To extract and save the content of web pages as a PDF:</p>
 
-Run the script with:
+  <ol>
+    <li>Set the <code>startPage</code>, <code>stopPage</code>, and <code>url</code> variables in the script to the desired range of pages.</li>
+    <li>Run the script with:
+      <pre><code>node index.js</code></pre>
+    </li>
+    <li>The content will be saved as a single PDF document, named <code>output.pdf</code>.</li>
+  </ol>
 
-bash
-Kopyala
-node index.js
-The content will be saved as a single PDF document, named output.pdf.
-Configuration
-You can easily modify the script by adjusting the following variables:
+  <h2>Configuration</h2>
+  <p>You can easily modify the script by adjusting the following variables:</p>
+  <ul>
+    <li><strong>startPage</strong>: The page number to start scraping.</li>
+    <li><strong>stopPage</strong>: The page number to stop scraping.</li>
+    <li><strong>appUrl</strong>: The base URL of the website to scrape from.</li>
+  </ul>
 
-startPage: The page number to start scraping.
-stopPage: The page number to stop scraping.
-appUrl: The base URL of the website to scrape from.
-Additionally, the evaluate function can be modified to target specific content types (such as paragraphs, images, etc.).
+  <p>Additionally, the <strong>evaluate</strong> function can be modified to target specific content types (such as paragraphs, images, etc.).</p>
 
-Example Output (PDF)
-The content from each page will be compiled into a single PDF document for easy viewing and sharing.
+  <h2>Example Output (PDF)</h2>
+  <p>The content from each page will be compiled into a single PDF document for easy viewing and sharing.</p>
 
-Contributing
-We welcome contributions! Feel free to:
+  <h2>Contributing</h2>
+  <p>We welcome contributions! Feel free to:</p>
+  <ul>
+    <li>Fork the repository and make improvements.</li>
+    <li>Report any issues you encounter.</li>
+    <li>Suggest new features or fixes.</li>
+  </ul>
+  <p>To contribute, simply open a pull request or create an issue.</p>
 
-Fork the repository and make improvements.
-Report any issues you encounter.
-Suggest new features or fixes.
-To contribute, simply open a pull request or create an issue.
-
-License
-This project is licensed under the MIT License.
+  <h2>License</h2>
+  <p>This project is licensed under the <a href="LICENSE" target="_blank">MIT License</a>.</p>
+</body>
+</html>
