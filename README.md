@@ -6,7 +6,6 @@
   <title>Web Page to JSON & PDF</title>
 </head>
 <body>
-  <h1>Web Page to JSON & PDF</h1>
 
   <p><strong>Web Page to JSON & PDF</strong> is a versatile tool designed to extract content from web pages and save it in two formats: JSON and PDF. It is ideal for scraping text, paragraphs, and other content from websites, making it easy to process and store the extracted data.</p>
 
